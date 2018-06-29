@@ -1,0 +1,11 @@
+name: cunit-example
+profiles: [Debug,Release]
+
+#
+#toolchainDefault: false
+#toolchains:
+#  "aarch64-linux-gnu":
+#    sysroot: /projects/mapper-ifc6640-linux-kernel
+#
+dependencies:
+  protobuf: 3.5.1
