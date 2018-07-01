@@ -2,10 +2,13 @@ name: cunit-example
 profiles: [Debug,Release]
 
 #
-#toolchainDefault: false
-#toolchains:
-#  "aarch64-linux-gnu":
-#    sysroot: /projects/mapper-ifc6640-linux-kernel
-#
+toolchainExcludeHost: true
+toolchains:
+  "aarch64-linux-gnu": cmake/aarch64.cmake
+#    prefix: /opt/x-tools/aarch64-unknown-linux-gnu/bin/aarch64-unknown-linux-gnu-
+#    cc: gcc
+#    cxx: g++
+#sysroot: /projects/mapper-ifc6640-linux-kernel
+
 dependencies:
-  protobuf: 3.5.1
+  protobuf: 3.6.0
