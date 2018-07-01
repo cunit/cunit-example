@@ -11,5 +11,6 @@ toolchains:
 #sysroot: /projects/mapper-ifc6640-linux-kernel
 
 dependencies:
+  ffmpeg: n3.4.2
   protobuf: 3.1.0
   opencv: 3.4.1
