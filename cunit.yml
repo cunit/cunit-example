@@ -1,16 +1,18 @@
 name: cunit-example
 profiles: [Debug]
 
-#
+# If you uncomment the following line, a host configuration will
+# not be generated and therefore it's likely you wont be able to
+# run your program locally
 #toolchainExcludeHost: true
 toolchains:
   "aarch64-linux-gnu": cmake/aarch64.cmake
-#    prefix: /opt/x-tools/aarch64-unknown-linux-gnu/bin/aarch64-unknown-linux-gnu-
-#    cc: gcc
-#    cxx: g++
-#sysroot: /projects/mapper-ifc6640-linux-kernel
+
 
 dependencies:
   ffmpeg: n3.4.2
-  protobuf: 3.1.0
   opencv: 3.4.1
+
+
+tools:
+  protobuf: 3.1.0
