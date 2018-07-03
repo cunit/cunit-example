@@ -8,6 +8,7 @@
 #include <opencv2/imgcodecs.hpp>
 #include <opencv2/imgproc.hpp>
 #include <opencv2/highgui.hpp>
+#include <test.pb.h>
 
 extern "C" {
 #include <libavcodec/avcodec.h>
@@ -29,5 +30,13 @@ int main() {
   cv::resize(mat,matOut, cv::Size(), 0.75, 0.75);
   cv::imwrite("/tmp/sample4.jpeg",matOut);
 
+  // PROTOBUF
+  cunit::test::CUnitTestMessage msg;
+  msg.set_name("Joey");
+  std::cout << "My name is: " << msg.name() << std::endl;
+
+  std::string json;
+  google::protobuf::util::MessageToJsonString(msg,&json);
+  std::cout << "My name is: " << json << std::endl;
   return 0;
 }
