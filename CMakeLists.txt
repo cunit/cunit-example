@@ -18,7 +18,7 @@ message("Protobuf generated cpp: ${PROTO_CPP_SRC}")
 add_executable(cunit_example main.cpp ${PROTO_CPP_SRC})
 target_include_directories(cunit_example PRIVATE ${CMAKE_CURRENT_BINARY_DIR}/generated)
 
-foreach(_pkg Protobuf OpenCV FFMPEG ZLIB TIFF JPEG PNG)
+foreach(_pkg Protobuf OpenCV FFMPEG ZLIB JPEG PNG)
   find_package(${_pkg} REQUIRED)
   message(STATUS "${_pkg}: ${${_pkg}_LIBRARIES}")
   target_link_libraries(cunit_example ${${_pkg}_LIBRARIES})
