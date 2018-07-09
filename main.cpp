@@ -10,19 +10,19 @@
 #include <opencv2/highgui.hpp>
 #include <test.pb.h>
 
-extern "C" {
-#include <libavcodec/avcodec.h>
-}
+//extern "C" {
+//#include <libavcodec/avcodec.h>
+//}
 
 int main() {
 
   // CHECK FFMPEG
-  avcodec_register_all();
-  AVCodec * codec = av_codec_next(NULL);
-  while(codec != NULL) {
-    std::cout << codec->long_name << std::endl;
-    codec = av_codec_next(codec);
-  }
+  //avcodec_register_all();
+  //AVCodec * codec = av_codec_next(NULL);
+  //while(codec != NULL) {
+  //  std::cout << codec->long_name << std::endl;
+  //  codec = av_codec_next(codec);
+  //}
 
   // CHECK OPENCV
   cv::Mat mat = cv::imread("./sample.png");

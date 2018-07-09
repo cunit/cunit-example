@@ -5,12 +5,12 @@ profiles: [Debug]
 # not be generated and therefore it's likely you wont be able to
 # run your program locally
 #toolchainExcludeHost: true
-toolchains:
-  "aarch64-linux-gnu": cmake/aarch64.cmake
+#toolchains:
+#  "aarch64-linux-gnu": cmake/aarch64.cmake
 
 
 dependencies:
-  ffmpeg: n3.4.2
+  #  ffmpeg: n3.4.2
   opencv: 3.4.1
   protobuf: 3.1.0
 
