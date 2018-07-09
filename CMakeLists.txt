@@ -3,8 +3,9 @@
 
 cmake_minimum_required(VERSION 3.0.2)
 include(${CMAKE_CURRENT_LIST_DIR}/.cunit/cunit.cmake)
-
 project(cunit_example)
+
+
 set(CMAKE_CXX_STANDARD 11)
 set(CMAKE_C_FLAGS "-fPIC -fPIE")
 set(CMAKE_CXX_FLAGS "-fPIC -fPIE")
