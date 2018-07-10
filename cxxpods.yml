@@ -1,0 +1,19 @@
+name: cunit-example
+profiles: [Debug]
+
+# If you uncomment the following line, a host configuration will
+# not be generated and therefore it's likely you wont be able to
+# run your program locally
+#toolchainExcludeHost: true
+#toolchains:
+#  "aarch64-linux-gnu": cmake/aarch64.cmake
+
+
+dependencies:
+  # ffmpeg: n3.4.2
+  # opencv: 3.4.1
+  protobuf: 3.1.0
+
+
+tools:
+  protobuf: 3.1.0
