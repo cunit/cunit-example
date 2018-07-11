@@ -11,9 +11,10 @@ name: cunit-example
 
 # DEPENDENCIES
 dependencies:
-  # ffmpeg: n3.4.2
-  # opencv: 3.4.1
   protobuf: 3.1.0
+  # opencv: 3.4.1
+  # ffmpeg: n3.4.2
+
 
 # TOOLS TO USE IN CMAKE
 tools:

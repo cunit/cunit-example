@@ -1,6 +1,0 @@
-syntax = "proto3";
-package cunit.test;
-
-message CUnitTestMessage {
-    string name = 1;
-}

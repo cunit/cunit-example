@@ -1,0 +1,6 @@
+syntax = "proto3";
+package cxxpods.test;
+
+message CXXPODSTestMessage2 {
+    string name = 1;
+}
