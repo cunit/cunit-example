@@ -14,9 +14,9 @@
 //#include <opencv2/highgui.hpp>
 
 // FFMPEG
-extern "C" {
-#include <libavcodec/avcodec.h>
-}
+//extern "C" {
+//#include <libavcodec/avcodec.h>
+//}
 
 int main() {
 
@@ -27,12 +27,12 @@ int main() {
 
 
   // FFMPEG - Enabled FFMPEG in cxxpods.yml
-  avcodec_register_all();
-  AVCodec * codec = av_codec_next(NULL);
-  while(codec != NULL) {
-    std::cout << codec->long_name << std::endl;
-    codec = av_codec_next(codec);
-  }
+  //avcodec_register_all();
+  //AVCodec * codec = av_codec_next(NULL);
+  //while(codec != NULL) {
+  //  std::cout << codec->long_name << std::endl;
+  //  codec = av_codec_next(codec);
+  //}
 
   // OPENCV - Enabled OPENCV in cxxpods.yml
   //cv::Mat mat = cv::imread("./sample.png");

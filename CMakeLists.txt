@@ -17,7 +17,7 @@ protoc(${CMAKE_CURRENT_BINARY_DIR}/generated PROTO_CPP_SRC ${PROTO_SRC})
 add_executable(cxxpods_example src/main.cpp ${PROTO_CPP_SRC})
 target_include_directories(cxxpods_example PRIVATE ${CMAKE_CURRENT_BINARY_DIR}/generated)
 
-foreach(_pkg Protobuf FFMPEG)
+foreach(_pkg Protobuf)
   find_package(${_pkg} REQUIRED)
   message(STATUS "${_pkg}: ${${_pkg}_LIBRARIES}")
   target_link_libraries(cxxpods_example ${${_pkg}_LIBRARIES})
